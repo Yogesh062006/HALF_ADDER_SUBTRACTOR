@@ -49,13 +49,38 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
+i)HALF ADDER
+
+module ha(a,b,sum,carry);
+input a,b;
+output sum,carry;
+assign sum= (a ^ b);
+assign carry= ( a & b);
+endmodule
+
+ii)HALF SUBTRACTOR
+
+module hs(a,b,difference,borrow);
+input a,b;
+output difference,borrow;
+assign difference= (a ^ b);
+assign borrow= ( ~a & b);
+endmodule
 
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
-Developed by: RegisterNumber:*/
+Developed by:Yogesh S
+
+RegisterNumber:24901108
 
 **RTL Schematic**
 
+![WhatsApp Image 2024-12-04 at 14 12 34_60984e8a](https://github.com/user-attachments/assets/eb21e3e2-22de-4c0b-bd26-f86747766033)
+
 **Output/TIMING Waveform**
 
+![WhatsApp Image 2024-12-04 at 14 12 34_6c51e868](https://github.com/user-attachments/assets/f9ca7f03-dc6b-4de7-b88b-e6ce7be982df)![WhatsApp Image 2024-12-04 at 14 12 35_b39043c3](https://github.com/user-attachments/assets/02ba2341-0f11-4207-bbe8-f69189b3fb68)
+
+
 **Result:**
+A Half Adder Subtractor is a digital circuit that combines the functionality of both an adder and a subtractor. It can add or subtract two binary bits, taking into account whether the operation is addition or subtraction.
